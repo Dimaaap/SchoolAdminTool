@@ -1,11 +1,10 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
-import { role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import Performance from "@/components/Performance";
 
-const SingleTeacherPage = () => {
+const SingleStudentPage = () => {
   return (
     <div className="flex-1 p-4 flex flex-col gap-4 xl:flex-row">
       <div className="w-full xl:w-2/3">
@@ -13,7 +12,7 @@ const SingleTeacherPage = () => {
           <div className="bg-mySky py-6 px-4 rounded-md flex-1 flex gap-4">
             <div className="w-1/3">
               <Image
-                src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://images.pexels.com/photos/3793238/pexels-photo-3793238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt=""
                 width={144}
                 height={144}
@@ -22,7 +21,7 @@ const SingleTeacherPage = () => {
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
                 <h1 className="text-xl font-semibold">
-                    Leonard Snyder
+                    Cameron Moran
                 </h1>
                 <p className="text-sm text-gray-500">
                     Lorem ipsum dolor sit amet 
@@ -79,8 +78,8 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">2</h1>
-                <span className="text-sm text-gray-400">Branches</span>
+                <h1 className="text-xl font-semibold">6</h1>
+                <span className="text-sm text-gray-400">Grades</span>
               </div>
             </div>
             {/* CARD */}
@@ -93,7 +92,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">6</h1>
+                <h1 className="text-xl font-semibold">18</h1>
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
             </div>
@@ -107,8 +106,8 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">6</h1>
-                <span className="text-sm text-gray-400">Classes</span>
+                <h1 className="text-xl font-semibold">6A</h1>
+                <span className="text-sm text-gray-400">Class</span>
               </div>
             </div>
           </div>
@@ -116,7 +115,7 @@ const SingleTeacherPage = () => {
         {/* BOTTOM */}
         <div className="mt-4 bg-white rounded-md 
         p-4 h-[800px]">
-          <h1>Teacher&apos;s Schedule</h1>
+          <h1>Student&apos;s Schedule</h1>
           <BigCalendar />
         </div>
       </div>
@@ -130,23 +129,23 @@ const SingleTeacherPage = () => {
           text-xs text-gray-500">
             <Link href="/" 
             className="p-3 rounded-md bg-skyLight">
-              Teacher&apos;s Classes
+              Student&apos;s Lessons
             </Link>
             <Link href="/"
             className="p-3 rounded-md bg-purpleLight">
-              Teacher&apos;s Students
+              Student&apos;s Teachers
             </Link>
             <Link href="/"
             className="p-3 rounded-md bg-yellowLight">
-              Teacher&apos;s Lessons
+              Student&apos;s Results
             </Link>
             <Link href="/"
             className="p-3 rounded-md bg-pink-50">
-              Teacher&apos;s Exams
+              Student&apos;s Exams
             </Link>
             <Link href="/"
             className="p-3 rounded-md bg-skyLight">
-              Teacher&apos;s Assignments
+              Student&apos;s Assignments
             </Link>
           </div>
         </div>
@@ -157,4 +156,4 @@ const SingleTeacherPage = () => {
   );
 };
 
-export default SingleTeacherPage;
+export default SingleStudentPage;
